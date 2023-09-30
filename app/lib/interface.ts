@@ -1,7 +1,7 @@
 export interface Post {
     title: string;
     overview: string;
-    content: string;
+    content: TypeObject;
     _id: string;
     slug: {
         current: string;
@@ -9,4 +9,8 @@ export interface Post {
     author: string;
     image: string;
     _createdAt: string;
+}
+export interface TypeObject  {
+    _type:string;
+    _key: string;
 }
