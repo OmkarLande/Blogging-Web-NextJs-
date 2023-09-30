@@ -6,8 +6,7 @@ export interface Post {
     slug: {
         current: string;
     };
-    author: string;
-    image: string;
+    author: TypeObject;
     _createdAt: string;
 }
 export interface TypeObject  {

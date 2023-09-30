@@ -19,8 +19,8 @@ export default function Navbar(){
                             className=" m-2"
                         />
                     </Link> 
-                    <Link href="/">
-                    <h1 className="text-2xl font-bold text-black dark:text-white">Blogs</h1>
+                    <Link href="/studio">
+                    <h1 className="text-2xl pr-4 text-black dark:text-white">+ Create Blog</h1>
                     </Link>
                     <ThemeButton/>
                 </div>

@@ -28,21 +28,7 @@ export default {
             title: 'Author',
             to: {type: 'author'},
         },
-        {
-            name: 'displayImage',
-            title: 'Display image',
-            type: 'image',
-            options: {
-              hotspot: true,
-            },
-            fields: [
-              {
-                name: 'alt',
-                type: 'string',
-                title: 'Alternative Text',
-              }
-            ]
-        },
+        
         {
             name: 'content',
             type: 'array',

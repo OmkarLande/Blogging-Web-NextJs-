@@ -39,9 +39,12 @@ export default async function SlugPage({
             <header className="pt-6 xl:pb-6">
                 <div className="space-y-1 text-center">
                     <div className="space-y-10">
-                        <div>
+                        <div className="flex flex-col">
                             <p className="text-base font-medium leading-6 text-teal-500">
                             {new Date(data._createdAt).toISOString().split("T")[0]}
+                            </p>
+                            <p className="text-base font-medium leading-6 text-teal-500">
+                            <PortableText  value={data.author} components={PortableTextComponent}/>
                             </p>
                         </div>
                     </div>

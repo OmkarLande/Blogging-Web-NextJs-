@@ -1,15 +1,21 @@
+"use client"
+import { useEffect } from "react";
 import { Post } from "./lib/interface";
 import { client } from "./lib/sanity";
 import Image from "next/image";
 import Link from "next/link";
 
+const query = `*[_type == "post"]`;
 async function getData() {
-  const query = `*[_type == "post"]`;
   const data = await client.fetch(query);
   return data;
 }
 
+
 export default async function Home() {
+  useEffect(()=>{
+    getData();
+  },[query])
   const data = (await getData() ) as Post[];
   return (
    <div className=" divide-y divide-gray-200 dark:divide-gray-700">
